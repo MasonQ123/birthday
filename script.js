@@ -13,6 +13,6 @@ if (bDay < currentDate) {
 else if (bDay > currentDate){
     alert("It hasn't been your birthday this year yet!")
 }
-else (bDay == currentDate){ 
+else{ 
     alert("Happy Birthday!")
 };
