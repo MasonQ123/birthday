@@ -1,15 +1,18 @@
-/* Pet Advice Kata */
+let birthDay = prompt("When is your birthday? (type as MM-DD)");
+let birthDay25 = "2025-" + birthDay + "T00:00:00-04:00";
+const bDay = new Date (birthDay25);
+console.log(bDay);
 
-/* Var, Prompt, Confirm, Alert, Compound Conditional */
+const currentDate = new Date;
+currentDate.setHours(0, 0, 0, 0);
+ console.log(currentDate); // Example: "Wed Sep 24 2025"
 
-// Create pet variable, set equal to empty quotes ("")
-// Ask if they are allergic, store in a boolean variable with OK/Cancel
-// If they are allergic, ask if they want a cute pet, store in a boolean variable with OK/Cancel
-// If they are not allergic, ask if they want to be outdoors with their pet.  Store it in a boolean with OK/Cancel.
-// If allergic and cute, pet =  bird
-// Else if allergic and not cute,  pet =  tarantula
-// Else if not allergic and outdoors,  pet =  dog
-// Else if not allergic and indoors,  pet =  cat 
-// Display the type of pet: You would do well with a pet
-// Ask for a pet name for the pet starting with the same letter as the pet starts with
-// Display petname the pet says hi. 
+if (bDay < currentDate) {
+    alert("It was already your birthday this year!")
+}
+else if (bDay > currentDate){
+    alert("It hasn't been your birthday this year yet!")
+}
+else (bDay == currentDate){ 
+    alert("Happy Birthday!")
+};
